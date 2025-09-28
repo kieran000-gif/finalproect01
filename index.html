@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Challenge App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Single Player Section -->
+        <div id="single-player" class="single-player">
+            <h1>🎉 Single Player Mode 🎯</h1>
+            <button onclick="goToChallengePage()">🎲 Random Challenge</button>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+            <!-- 2-4 Player Mode Section -->
+            <div id="multi-player" class="multi-player">
+                <h2>2-4 Player Mode</h2>
+                <button onclick="goToPlayerMode()">🎮 Play with Friends</button>
+            </div>
+
+            <!-- Prank Mode Section -->
+            <div id="prank-mode" class="prank-mode">
+                <h2>Prank Mode</h2>
+                <button onclick="goToPrankPage()">😂 Prank Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

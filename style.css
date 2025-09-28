@@ -1,0 +1,134 @@
+/* General Styling */
+body.homepage {
+    background-color: #001f3f; /* Dark blue background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Single Player Section */
+.single-player {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #0074D9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.single-player h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+/* Challenge Text Styling */
+#challenge-display,
+#prank-text,
+#players {
+    font-size: 3.5rem; /* Large and prominent text */
+    margin: 20px 0;
+    color: #FFD700; /* Bright gold color for fun */
+    text-shadow: 2px 2px 5px #FF4136, 0 0 10px #0074D9; /* Add glowing effect */
+    font-weight: bold;
+    animation: pulse 2s infinite; /* Add pulse animation */
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        text-shadow: 2px 2px 5px #FF4136, 0 0 10px #0074D9;
+    }
+    50% {
+        transform: scale(1.1);
+        text-shadow: 4px 4px 10px #FF4136, 0 0 20px #0074D9;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 2px 2px 5px #FF4136, 0 0 10px #0074D9;
+    }
+}
+
+/* Button Styling */
+button {
+    font-size: 1.8rem; /* Slightly larger buttons */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #FF4136, #0074D9); /* Gradient background */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Bottom Section Styling */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* 2-4 Player Mode Section */
+.multi-player,
+.prank-mode {
+    width: 45%;
+    padding: 15px;
+    background-color: #2ECC40;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.multi-player h2,
+.prank-mode h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.multi-player button,
+.prank-mode button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF851B;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.multi-player button:hover,
+.prank-mode button:hover {
+    transform: scale(1.1);
+}

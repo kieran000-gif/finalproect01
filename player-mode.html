@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-4 Player Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Title Section -->
+        <div id="multi-player" class="single-player">
+            <h1>🎮 2-4 Player Mode 🎮</h1>
+            <h2>Select Number of Players</h2>
+            <button onclick="startGame(2)">2 Players</button>
+            <button onclick="startGame(3)">3 Players</button>
+            <button onclick="startGame(4)">4 Players</button>
+        </div>
+
+        <!-- Player Challenges Section -->
+        <div id="player-challenges" style="display: none;">
+            <h2>Player Challenges</h2>
+            <div id="players"></div>
+        </div>
+
+        <button onclick="goBack()">🔙 Back to Homepage</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
